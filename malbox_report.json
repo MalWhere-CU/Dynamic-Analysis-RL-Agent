@@ -1,0 +1,3518 @@
+{
+  "target": {
+    "file": {
+      "name": "malware2.exe",
+      "size": 1168217,
+      "type": "pe32+ exe",
+      "cape_type_code": 0
+    },
+    "category": "file"
+  },
+  "behavior": {
+    "processes": [
+      {
+        "process_id": 7016,
+        "parent_id": 0,
+        "process_name": "malware2.exe",
+        "threads": [
+          1680,
+          7244,
+          7248,
+          7252,
+          7256
+        ],
+        "calls": [
+          {
+            "api": "__process__",
+            "category": "__notification__",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 0,
+            "arguments": [
+              {
+                "name": "TimeLow",
+                "value": "0xaad248b7"
+              },
+              {
+                "name": "TimeHigh",
+                "value": "0x1dcff0d"
+              },
+              {
+                "name": "ProcessIdentifier",
+                "value": "0x1b68"
+              },
+              {
+                "name": "ParentProcessIdentifier",
+                "value": "0x9a8"
+              },
+              {
+                "name": "ModulePath",
+                "value": "0x433a5c55736572735c6d6f68616d65645c4465736b746f705c73616d706c655c6d616c77617265322e657865"
+              }
+            ]
+          },
+          {
+            "api": "__thread__",
+            "category": "__notification__",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 0,
+            "arguments": [
+              {
+                "name": "ProcessIdentifier",
+                "value": "0x1b68"
+              }
+            ]
+          },
+          {
+            "api": "__environ__",
+            "category": "__notification__",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 0,
+            "arguments": [
+              {
+                "name": "UserName",
+                "value": "0x6d6f68616d6564"
+              },
+              {
+                "name": "ComputerName",
+                "value": "0x572d"
+              },
+              {
+                "name": "InstallDate",
+                "value": "0x0"
+              },
+              {
+                "name": "WindowsPath",
+                "value": "0x433a5c57494e444f5753"
+              },
+              {
+                "name": "TempPath",
+                "value": "0x433a5c55736572735c6d6f68616d65645c417070446174615c4c6f63616c5c54656d705c"
+              },
+              {
+                "name": "CommandLine",
+                "value": "0x22433a5c55736572735c6d6f68616d65645c4465736b746f705c73616d706c655c6d616c77617265322e6578652220"
+              },
+              {
+                "name": "RegisteredOwner",
+                "value": "0x"
+              },
+              {
+                "name": "RegisteredOrganization",
+                "value": "0x"
+              },
+              {
+                "name": "ProductName",
+                "value": "0x"
+              },
+              {
+                "name": "OSMajor",
+                "value": "0x6"
+              },
+              {
+                "name": "OSMinor",
+                "value": "0x2"
+              },
+              {
+                "name": "SystemVolumeSerialNumber",
+                "value": "0x333035392d65353164"
+              },
+              {
+                "name": "SystemVolumeGUID",
+                "value": "0x65646232363633342d326562352d346132372d623234322d636566323862316131356435"
+              },
+              {
+                "name": "MachineGUID",
+                "value": "0x33353165353232652d326663382d343461632d393264652d666330346137353662313739"
+              },
+              {
+                "name": "MainExeBase",
+                "value": "0x7ff6a0ed0000"
+              },
+              {
+                "name": "MainExeSize",
+                "value": "0xd5000"
+              },
+              {
+                "name": "Bitness",
+                "value": "0x36342d626974"
+              }
+            ]
+          },
+          {
+            "api": "NtOpenFile",
+            "category": "filesystem",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 359,
+            "arguments": [
+              {
+                "name": "FileHandle",
+                "value": "0x244"
+              },
+              {
+                "name": "DesiredAccess",
+                "value": "0x100001"
+              },
+              {
+                "name": "FileName",
+                "value": "0x5c4465766963655c434e47"
+              },
+              {
+                "name": "ShareAccess",
+                "value": "0x7"
+              }
+            ]
+          },
+          {
+            "api": "DeviceIoControl",
+            "category": "device",
+            "status": "success",
+            "return_value": 1,
+            "thread_id": 1680,
+            "time": 359,
+            "arguments": [
+              {
+                "name": "DeviceHandle",
+                "value": "0x244"
+              },
+              {
+                "name": "IoControlCode",
+                "value": "0x390008"
+              },
+              {
+                "name": "InBuffer",
+                "value": "0x"
+              },
+              {
+                "name": "OutBuffer",
+                "value": "0x9053882b8d9bb0518ddec4e5d03a51135a00a67f504c7514cbdc18ff9940db57577107cf09c3a994a2ff3607e139ec05"
+              }
+            ]
+          },
+          {
+            "api": "RegOpenKeyExW",
+            "category": "registry",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 359,
+            "arguments": [
+              {
+                "name": "Registry",
+                "value": "0xffffffff80000002"
+              },
+              {
+                "name": "SubKey",
+                "value": "0x53797374656d5c43757272656e74436f6e74726f6c7365745c436f6e74726f6c5c4c7361"
+              },
+              {
+                "name": "Handle",
+                "value": "0x258"
+              },
+              {
+                "name": "FullName",
+                "value": "0x484b45595f4c4f43414c5f4d414348494e455c53797374656d5c43757272656e74436f6e74726f6c7365745c436f6e74726f6c5c4c7361"
+              }
+            ]
+          },
+          {
+            "api": "RegQueryValueExW",
+            "category": "registry",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 359,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x258"
+              },
+              {
+                "name": "ValueName",
+                "value": "0x4c7361506964"
+              },
+              {
+                "name": "Data",
+                "value": "0x308"
+              },
+              {
+                "name": "FullName",
+                "value": "0x484b45595f4c4f43414c5f4d414348494e455c53595354454d5c436f6e74726f6c5365743030315c436f6e74726f6c5c4c73615c4c7361506964"
+              }
+            ]
+          },
+          {
+            "api": "RegCloseKey",
+            "category": "registry",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 359,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x258"
+              }
+            ]
+          },
+          {
+            "api": "NtOpenKey",
+            "category": "registry",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 359,
+            "arguments": [
+              {
+                "name": "KeyHandle",
+                "value": "0x258"
+              },
+              {
+                "name": "DesiredAccess",
+                "value": "0x1"
+              },
+              {
+                "name": "ObjectAttributesHandle",
+                "value": "0x0"
+              },
+              {
+                "name": "ObjectAttributesName",
+                "value": "0x5c52656769737472795c4d414348494e455c53797374656d5c43757272656e74436f6e74726f6c5365745c436f6e74726f6c5c53657373696f6e204d616e61676572"
+              },
+              {
+                "name": "ObjectAttributes",
+                "value": "0x484b45595f4c4f43414c5f4d414348494e455c53797374656d5c43757272656e74436f6e74726f6c5365745c436f6e74726f6c5c53657373696f6e204d616e61676572"
+              }
+            ]
+          },
+          {
+            "api": "NtQueryValueKey",
+            "category": "registry",
+            "status": "failed",
+            "return_value": -1073741772,
+            "thread_id": 1680,
+            "time": 359,
+            "arguments": [
+              {
+                "name": "KeyHandle",
+                "value": "0x258"
+              },
+              {
+                "name": "ValueName",
+                "value": "0x536d7444656c6179536c6565704c6f6f7057696e646f7753697a65"
+              },
+              {
+                "name": "FullName",
+                "value": "0x484b45595f4c4f43414c5f4d414348494e455c53595354454d5c436f6e74726f6c5365743030315c436f6e74726f6c5c53657373696f6e204d616e616765725c536d7444656c6179536c6565704c6f6f7057696e646f7753697a65"
+              }
+            ]
+          },
+          {
+            "api": "NtQueryValueKey",
+            "category": "registry",
+            "status": "failed",
+            "return_value": -1073741772,
+            "thread_id": 1680,
+            "time": 359,
+            "arguments": [
+              {
+                "name": "KeyHandle",
+                "value": "0x258"
+              },
+              {
+                "name": "ValueName",
+                "value": "0x536d7444656c61795370696e436f756e745468726573686f6c64"
+              },
+              {
+                "name": "FullName",
+                "value": "0x484b45595f4c4f43414c5f4d414348494e455c53595354454d5c436f6e74726f6c5365743030315c436f6e74726f6c5c53657373696f6e204d616e616765725c536d7444656c61795370696e436f756e745468726573686f6c64"
+              }
+            ]
+          },
+          {
+            "api": "NtQueryValueKey",
+            "category": "registry",
+            "status": "failed",
+            "return_value": -1073741772,
+            "thread_id": 1680,
+            "time": 359,
+            "arguments": [
+              {
+                "name": "KeyHandle",
+                "value": "0x258"
+              },
+              {
+                "name": "ValueName",
+                "value": "0x536d7444656c6179426173655969656c64"
+              },
+              {
+                "name": "FullName",
+                "value": "0x484b45595f4c4f43414c5f4d414348494e455c53595354454d5c436f6e74726f6c5365743030315c436f6e74726f6c5c53657373696f6e204d616e616765725c536d7444656c6179426173655969656c64"
+              }
+            ]
+          },
+          {
+            "api": "NtQueryValueKey",
+            "category": "registry",
+            "status": "failed",
+            "return_value": -1073741772,
+            "thread_id": 1680,
+            "time": 359,
+            "arguments": [
+              {
+                "name": "KeyHandle",
+                "value": "0x258"
+              },
+              {
+                "name": "ValueName",
+                "value": "0x536d74466163746f725969656c64"
+              },
+              {
+                "name": "FullName",
+                "value": "0x484b45595f4c4f43414c5f4d414348494e455c53595354454d5c436f6e74726f6c5365743030315c436f6e74726f6c5c53657373696f6e204d616e616765725c536d74466163746f725969656c64"
+              }
+            ]
+          },
+          {
+            "api": "NtQueryValueKey",
+            "category": "registry",
+            "status": "failed",
+            "return_value": -1073741772,
+            "thread_id": 1680,
+            "time": 359,
+            "arguments": [
+              {
+                "name": "KeyHandle",
+                "value": "0x258"
+              },
+              {
+                "name": "ValueName",
+                "value": "0x536d7444656c61794d61785969656c64"
+              },
+              {
+                "name": "FullName",
+                "value": "0x484b45595f4c4f43414c5f4d414348494e455c53595354454d5c436f6e74726f6c5365743030315c436f6e74726f6c5c53657373696f6e204d616e616765725c536d7444656c61794d61785969656c64"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 359,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x258"
+              }
+            ]
+          },
+          {
+            "api": "NtTestAlert",
+            "category": "threading",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 359,
+            "arguments": []
+          },
+          {
+            "api": "RtlUserThreadStart",
+            "category": "threading",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 359,
+            "arguments": [
+              {
+                "name": "StartAddress",
+                "value": "0x7ff6a0ed13f0"
+              },
+              {
+                "name": "Parameter",
+                "value": "0x319000"
+              }
+            ]
+          },
+          {
+            "api": "NtWaitForSingleObject",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 7252,
+            "time": 359,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x48"
+              },
+              {
+                "name": "Milliseconds",
+                "value": "0xffffffff"
+              },
+              {
+                "name": "Status",
+                "value": "0x496e66696e697465"
+              }
+            ]
+          },
+          {
+            "api": "NtDeviceIoControlFile",
+            "category": "device",
+            "status": "failed",
+            "return_value": -1073282885,
+            "thread_id": 7256,
+            "time": 359,
+            "arguments": [
+              {
+                "name": "FileHandle",
+                "value": "0x58"
+              },
+              {
+                "name": "HandleName",
+                "value": "0x5c4465766963655c436f6e447276"
+              },
+              {
+                "name": "IoControlCode",
+                "value": "0x500016"
+              },
+              {
+                "name": "InputBuffer",
+                "value": "0x000000000000000001000000010000000a0000000000000040f1220400000000020000000000000048f1220400000000"
+              },
+              {
+                "name": "OutputBuffer",
+                "value": "0x"
+              }
+            ]
+          },
+          {
+            "api": "NtTestAlert",
+            "category": "threading",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 7256,
+            "time": 359,
+            "arguments": []
+          },
+          {
+            "api": "RtlUserThreadStart",
+            "category": "threading",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 7256,
+            "time": 359,
+            "arguments": [
+              {
+                "name": "StartAddress",
+                "value": "0x7fff2ecb2f10"
+              },
+              {
+                "name": "Parameter",
+                "value": "0x0"
+              }
+            ]
+          },
+          {
+            "api": "NtDeviceIoControlFile",
+            "category": "device",
+            "status": "failed",
+            "return_value": -1073282885,
+            "thread_id": 7252,
+            "time": 375,
+            "arguments": [
+              {
+                "name": "FileHandle",
+                "value": "0x58"
+              },
+              {
+                "name": "HandleName",
+                "value": "0x5c4465766963655c436f6e447276"
+              },
+              {
+                "name": "IoControlCode",
+                "value": "0x500016"
+              },
+              {
+                "name": "InputBuffer",
+                "value": "0x000000000000000001000000010000000a0000000000000040f1020400000000020000000000000048f1020400000000"
+              },
+              {
+                "name": "OutputBuffer",
+                "value": "0x"
+              }
+            ]
+          },
+          {
+            "api": "NtTestAlert",
+            "category": "threading",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 7252,
+            "time": 375,
+            "arguments": []
+          },
+          {
+            "api": "RtlUserThreadStart",
+            "category": "threading",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 7252,
+            "time": 375,
+            "arguments": [
+              {
+                "name": "StartAddress",
+                "value": "0x7fff2ecb3070"
+              },
+              {
+                "name": "Parameter",
+                "value": "0x0"
+              }
+            ]
+          },
+          {
+            "api": "NtDeviceIoControlFile",
+            "category": "device",
+            "status": "failed",
+            "return_value": -1073282885,
+            "thread_id": 7248,
+            "time": 375,
+            "arguments": [
+              {
+                "name": "FileHandle",
+                "value": "0x58"
+              },
+              {
+                "name": "HandleName",
+                "value": "0x5c4465766963655c436f6e447276"
+              },
+              {
+                "name": "IoControlCode",
+                "value": "0x500016"
+              },
+              {
+                "name": "InputBuffer",
+                "value": "0x000000000000000001000000010000000a0000000000000040f1e20300000000020000000000000048f1e20300000000"
+              },
+              {
+                "name": "OutputBuffer",
+                "value": "0x"
+              }
+            ]
+          },
+          {
+            "api": "NtTestAlert",
+            "category": "threading",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 7248,
+            "time": 375,
+            "arguments": []
+          },
+          {
+            "api": "RtlUserThreadStart",
+            "category": "threading",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 7248,
+            "time": 375,
+            "arguments": [
+              {
+                "name": "StartAddress",
+                "value": "0x7fff2ecb2e50"
+              },
+              {
+                "name": "Parameter",
+                "value": "0x0"
+              }
+            ]
+          },
+          {
+            "api": "NtDeviceIoControlFile",
+            "category": "device",
+            "status": "failed",
+            "return_value": -1073282885,
+            "thread_id": 7244,
+            "time": 375,
+            "arguments": [
+              {
+                "name": "FileHandle",
+                "value": "0x58"
+              },
+              {
+                "name": "HandleName",
+                "value": "0x5c4465766963655c436f6e447276"
+              },
+              {
+                "name": "IoControlCode",
+                "value": "0x500016"
+              },
+              {
+                "name": "InputBuffer",
+                "value": "0x000000000000000001000000010000000a0000000000000040f1c20300000000020000000000000048f1c20300000000"
+              },
+              {
+                "name": "OutputBuffer",
+                "value": "0x"
+              }
+            ]
+          },
+          {
+            "api": "NtTestAlert",
+            "category": "threading",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 7244,
+            "time": 375,
+            "arguments": []
+          },
+          {
+            "api": "RtlUserThreadStart",
+            "category": "threading",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 7244,
+            "time": 375,
+            "arguments": [
+              {
+                "name": "StartAddress",
+                "value": "0x7fff2ecb2a40"
+              },
+              {
+                "name": "Parameter",
+                "value": "0x0"
+              }
+            ]
+          },
+          {
+            "api": "SetUnhandledExceptionFilter",
+            "category": "hooking",
+            "status": "success",
+            "return_value": 1,
+            "thread_id": 1680,
+            "time": 421,
+            "arguments": [
+              {
+                "name": "ExceptionFilter",
+                "value": "0x7ff6a0f69fe0"
+              }
+            ]
+          },
+          {
+            "api": "RtlAddVectoredExceptionHandler",
+            "category": "hooking",
+            "status": "success",
+            "return_value": 7133264,
+            "thread_id": 1680,
+            "time": 421,
+            "arguments": [
+              {
+                "name": "First",
+                "value": "0x0"
+              },
+              {
+                "name": "Handler",
+                "value": "0x7ff6a0f153e0"
+              }
+            ]
+          },
+          {
+            "api": "SetThreadStackGuarantee",
+            "category": "threading",
+            "status": "success",
+            "return_value": 1,
+            "thread_id": 1680,
+            "time": 421,
+            "arguments": [
+              {
+                "name": "InputSize",
+                "value": "0x5000"
+              },
+              {
+                "name": "OutputSize",
+                "value": "0x0"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetDllHandle",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 421,
+            "arguments": [
+              {
+                "name": "FileName",
+                "value": "0x6b65726e656c3332"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff5fc90000"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetProcedureAddressForCaller",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 421,
+            "arguments": [
+              {
+                "name": "ModuleName",
+                "value": "0x4b45524e454c33322e444c4c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff5fc90000"
+              },
+              {
+                "name": "FunctionName",
+                "value": "0x5365745468726561644465736372697074696f6e"
+              },
+              {
+                "name": "Ordinal",
+                "value": "0x0"
+              },
+              {
+                "name": "FunctionAddress",
+                "value": "0x7fff5e13dc30"
+              }
+            ]
+          },
+          {
+            "api": "SetThreadDescription",
+            "category": "threading",
+            "status": "success",
+            "return_value": 268435456,
+            "thread_id": 1680,
+            "time": 421,
+            "arguments": [
+              {
+                "name": "ThreadHandle",
+                "value": "0xfffffffffffffffe"
+              },
+              {
+                "name": "ThreadDescription",
+                "value": "0x6d61696e"
+              }
+            ]
+          },
+          {
+            "api": "NtDeviceIoControlFile",
+            "category": "device",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 421,
+            "arguments": [
+              {
+                "name": "FileHandle",
+                "value": "0x58"
+              },
+              {
+                "name": "HandleName",
+                "value": "0x5c4465766963655c436f6e447276"
+              },
+              {
+                "name": "IoControlCode",
+                "value": "0x500016"
+              },
+              {
+                "name": "InputBuffer",
+                "value": "0x680000000000000001000000010000000c0000000000000030f85f0000000000040000000000000038f85f0000000000"
+              },
+              {
+                "name": "OutputBuffer",
+                "value": "0x"
+              }
+            ]
+          },
+          {
+            "api": "NtDeviceIoControlFile",
+            "category": "device",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 421,
+            "arguments": [
+              {
+                "name": "FileHandle",
+                "value": "0x58"
+              },
+              {
+                "name": "HandleName",
+                "value": "0x5c4465766963655c436f6e447276"
+              },
+              {
+                "name": "IoControlCode",
+                "value": "0x500016"
+              },
+              {
+                "name": "InputBuffer",
+                "value": "0x00000000000000000100000001000000100000000000000040f85f0000000000080000000000000048f85f0000000000"
+              },
+              {
+                "name": "OutputBuffer",
+                "value": "0x"
+              }
+            ]
+          },
+          {
+            "api": "WriteConsoleW",
+            "category": "system",
+            "status": "success",
+            "return_value": 1,
+            "thread_id": 1680,
+            "time": 421,
+            "arguments": [
+              {
+                "name": "ConsoleHandle",
+                "value": "0x68"
+              },
+              {
+                "name": "Buffer",
+                "value": "0x5b2a5d204c6f75642054657374205061796c6f616420537461727465640a"
+              }
+            ]
+          },
+          {
+            "api": "IsDebuggerPresent",
+            "category": "system",
+            "status": "failed",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 421,
+            "arguments": []
+          },
+          {
+            "api": "NtDeviceIoControlFile",
+            "category": "device",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 437,
+            "arguments": [
+              {
+                "name": "FileHandle",
+                "value": "0x58"
+              },
+              {
+                "name": "HandleName",
+                "value": "0x5c4465766963655c436f6e447276"
+              },
+              {
+                "name": "IoControlCode",
+                "value": "0x500016"
+              },
+              {
+                "name": "InputBuffer",
+                "value": "0x680000000000000001000000010000000c0000000000000030f85f0000000000040000000000000038f85f0000000000"
+              },
+              {
+                "name": "OutputBuffer",
+                "value": "0x"
+              }
+            ]
+          },
+          {
+            "api": "NtDeviceIoControlFile",
+            "category": "device",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 437,
+            "arguments": [
+              {
+                "name": "FileHandle",
+                "value": "0x58"
+              },
+              {
+                "name": "HandleName",
+                "value": "0x5c4465766963655c436f6e447276"
+              },
+              {
+                "name": "IoControlCode",
+                "value": "0x500016"
+              },
+              {
+                "name": "InputBuffer",
+                "value": "0x00000000000000000100000001000000100000000000000040f85f0000000000080000000000000048f85f0000000000"
+              },
+              {
+                "name": "OutputBuffer",
+                "value": "0x"
+              }
+            ]
+          },
+          {
+            "api": "WriteConsoleW",
+            "category": "system",
+            "status": "success",
+            "return_value": 1,
+            "thread_id": 1680,
+            "time": 437,
+            "arguments": [
+              {
+                "name": "ConsoleHandle",
+                "value": "0x68"
+              },
+              {
+                "name": "Buffer",
+                "value": "0x5b2a5d204e6f20646562756767657220666f756e642e0a"
+              }
+            ]
+          },
+          {
+            "api": "NtCreateFile",
+            "category": "filesystem",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 437,
+            "arguments": [
+              {
+                "name": "FileHandle",
+                "value": "0x258"
+              },
+              {
+                "name": "DesiredAccess",
+                "value": "0x40100080"
+              },
+              {
+                "name": "FileName",
+                "value": "0x433a5c57696e646f77735c54656d705c636170655f746573745f64726f702e747874"
+              },
+              {
+                "name": "CreateDisposition",
+                "value": "0x3"
+              },
+              {
+                "name": "ShareAccess",
+                "value": "0x1"
+              },
+              {
+                "name": "FileAttributes",
+                "value": "0x80"
+              },
+              {
+                "name": "ExistedBefore",
+                "value": "0x6e6f"
+              },
+              {
+                "name": "StackPivoted",
+                "value": "0x6e6f"
+              }
+            ]
+          },
+          {
+            "api": "NtWriteFile",
+            "category": "filesystem",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 437,
+            "arguments": [
+              {
+                "name": "FileHandle",
+                "value": "0x258"
+              },
+              {
+                "name": "HandleName",
+                "value": "0x433a5c57696e646f77735c54656d705c636170655f746573745f64726f702e747874"
+              },
+              {
+                "name": "Buffer",
+                "value": "0x54686973206973206120746573742066696c652064726f7020746f20747269676765722043726561746546696c655720616e6420577269746546696c6520686f6f6b732e0d0a"
+              },
+              {
+                "name": "Length",
+                "value": "0x46"
+              }
+            ]
+          },
+          {
+            "api": "NtDeviceIoControlFile",
+            "category": "device",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 437,
+            "arguments": [
+              {
+                "name": "FileHandle",
+                "value": "0x58"
+              },
+              {
+                "name": "HandleName",
+                "value": "0x5c4465766963655c436f6e447276"
+              },
+              {
+                "name": "IoControlCode",
+                "value": "0x500016"
+              },
+              {
+                "name": "InputBuffer",
+                "value": "0x680000000000000001000000010000000c0000000000000030f85f0000000000040000000000000038f85f0000000000"
+              },
+              {
+                "name": "OutputBuffer",
+                "value": "0x"
+              }
+            ]
+          },
+          {
+            "api": "NtDeviceIoControlFile",
+            "category": "device",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 437,
+            "arguments": [
+              {
+                "name": "FileHandle",
+                "value": "0x58"
+              },
+              {
+                "name": "HandleName",
+                "value": "0x5c4465766963655c436f6e447276"
+              },
+              {
+                "name": "IoControlCode",
+                "value": "0x500016"
+              },
+              {
+                "name": "InputBuffer",
+                "value": "0x00000000000000000100000001000000100000000000000040f85f0000000000080000000000000048f85f0000000000"
+              },
+              {
+                "name": "OutputBuffer",
+                "value": "0x"
+              }
+            ]
+          },
+          {
+            "api": "WriteConsoleW",
+            "category": "system",
+            "status": "success",
+            "return_value": 1,
+            "thread_id": 1680,
+            "time": 437,
+            "arguments": [
+              {
+                "name": "ConsoleHandle",
+                "value": "0x68"
+              },
+              {
+                "name": "Buffer",
+                "value": "0x5b2a5d2044726f707065642066696c6520746f20433a5c57696e646f77735c54656d705c636170655f746573745f64726f702e7478740a"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 437,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x258"
+              }
+            ]
+          },
+          {
+            "api": "NtCreateUserProcess",
+            "category": "process",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 484,
+            "arguments": [
+              {
+                "name": "ProcessHandle",
+                "value": "0x25c"
+              },
+              {
+                "name": "ThreadHandle",
+                "value": "0x258"
+              },
+              {
+                "name": "ProcessDesiredAccess",
+                "value": "0x2000000"
+              },
+              {
+                "name": "ThreadDesiredAccess",
+                "value": "0x2000000"
+              },
+              {
+                "name": "ProcessFileName",
+                "value": "0x"
+              },
+              {
+                "name": "ThreadName",
+                "value": "0x"
+              },
+              {
+                "name": "ImagePathName",
+                "value": "0x433a5c57696e646f77735c53797374656d33325c63616c632e657865"
+              },
+              {
+                "name": "CommandLine",
+                "value": "0x433a5c57696e646f77735c53797374656d33325c63616c632e657865"
+              },
+              {
+                "name": "DllPath",
+                "value": ""
+              },
+              {
+                "name": "ProcessId",
+                "value": "0x1ca0"
+              }
+            ]
+          },
+          {
+            "api": "NtQuerySystemTime",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 484,
+            "arguments": []
+          },
+          {
+            "api": "DllLoadNotification",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 484,
+            "arguments": [
+              {
+                "name": "NotificationReason",
+                "value": "0x6c6f6164"
+              },
+              {
+                "name": "DllName",
+                "value": "0x433a5c57494e444f57535c53595354454d33325c77696e646f77732e73746f72616765"
+              },
+              {
+                "name": "DllBase",
+                "value": "0x7fff5be40000"
+              }
+            ]
+          },
+          {
+            "api": "NtQuerySystemTime",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 515,
+            "arguments": []
+          },
+          {
+            "api": "DllLoadNotification",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 515,
+            "arguments": [
+              {
+                "name": "NotificationReason",
+                "value": "0x6c6f6164"
+              },
+              {
+                "name": "DllName",
+                "value": "0x433a5c57494e444f57535c53797374656d33325c5348434f5245"
+              },
+              {
+                "name": "DllBase",
+                "value": "0x7fff5f0a0000"
+              }
+            ]
+          },
+          {
+            "api": "NtQuerySystemTime",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 515,
+            "arguments": []
+          },
+          {
+            "api": "GetSystemTimeAsFileTime",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 546,
+            "arguments": []
+          },
+          {
+            "api": "LdrLoadDll",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 562,
+            "arguments": [
+              {
+                "name": "Flags",
+                "value": "0x0"
+              },
+              {
+                "name": "FileName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "BaseAddress",
+                "value": "0x7fff60c40000"
+              }
+            ]
+          },
+          {
+            "api": "LdrLoadDll",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 562,
+            "arguments": [
+              {
+                "name": "Flags",
+                "value": "0x0"
+              },
+              {
+                "name": "FileName",
+                "value": "0x4b65726e656c42617365"
+              },
+              {
+                "name": "BaseAddress",
+                "value": "0x7fff5e050000"
+              }
+            ]
+          },
+          {
+            "api": "CreateProcessInternalW",
+            "category": "process",
+            "status": "success",
+            "return_value": 1,
+            "thread_id": 1680,
+            "time": 562,
+            "arguments": [
+              {
+                "name": "ApplicationName",
+                "value": "0x433a5c57696e646f77735c53797374656d33325c63616c632e657865"
+              },
+              {
+                "name": "CommandLine",
+                "value": "0x433a5c57696e646f77735c53797374656d33325c63616c632e657865"
+              },
+              {
+                "name": "CreationFlags",
+                "value": "0x10"
+              },
+              {
+                "name": "ProcessId",
+                "value": "0x1ca0"
+              },
+              {
+                "name": "ThreadId",
+                "value": "0x1ca4"
+              },
+              {
+                "name": "ProcessHandle",
+                "value": "0x25c"
+              },
+              {
+                "name": "ThreadHandle",
+                "value": "0x258"
+              },
+              {
+                "name": "StackPivoted",
+                "value": "0x6e6f"
+              }
+            ]
+          },
+          {
+            "api": "NtDeviceIoControlFile",
+            "category": "device",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 562,
+            "arguments": [
+              {
+                "name": "FileHandle",
+                "value": "0x58"
+              },
+              {
+                "name": "HandleName",
+                "value": "0x5c4465766963655c436f6e447276"
+              },
+              {
+                "name": "IoControlCode",
+                "value": "0x500016"
+              },
+              {
+                "name": "InputBuffer",
+                "value": "0x680000000000000001000000010000000c0000000000000080f75f0000000000040000000000000088f75f0000000000"
+              },
+              {
+                "name": "OutputBuffer",
+                "value": "0x"
+              }
+            ]
+          },
+          {
+            "api": "NtDeviceIoControlFile",
+            "category": "device",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 562,
+            "arguments": [
+              {
+                "name": "FileHandle",
+                "value": "0x58"
+              },
+              {
+                "name": "HandleName",
+                "value": "0x5c4465766963655c436f6e447276"
+              },
+              {
+                "name": "IoControlCode",
+                "value": "0x500016"
+              },
+              {
+                "name": "InputBuffer",
+                "value": "0x00000000000000000100000001000000100000000000000090f75f0000000000080000000000000098f75f0000000000"
+              },
+              {
+                "name": "OutputBuffer",
+                "value": "0x"
+              }
+            ]
+          },
+          {
+            "api": "WriteConsoleW",
+            "category": "system",
+            "status": "success",
+            "return_value": 1,
+            "thread_id": 1680,
+            "time": 562,
+            "arguments": [
+              {
+                "name": "ConsoleHandle",
+                "value": "0x68"
+              },
+              {
+                "name": "Buffer",
+                "value": "0x5b2a5d20537061776e65642063616c632e65786520285049443a2037333238290a"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 562,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x25c"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 562,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x258"
+              }
+            ]
+          },
+          {
+            "api": "NtDeviceIoControlFile",
+            "category": "device",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 562,
+            "arguments": [
+              {
+                "name": "FileHandle",
+                "value": "0x58"
+              },
+              {
+                "name": "HandleName",
+                "value": "0x5c4465766963655c436f6e447276"
+              },
+              {
+                "name": "IoControlCode",
+                "value": "0x500016"
+              },
+              {
+                "name": "InputBuffer",
+                "value": "0x680000000000000001000000010000000c0000000000000030f85f0000000000040000000000000038f85f0000000000"
+              },
+              {
+                "name": "OutputBuffer",
+                "value": "0x"
+              }
+            ]
+          },
+          {
+            "api": "NtDeviceIoControlFile",
+            "category": "device",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 562,
+            "arguments": [
+              {
+                "name": "FileHandle",
+                "value": "0x58"
+              },
+              {
+                "name": "HandleName",
+                "value": "0x5c4465766963655c436f6e447276"
+              },
+              {
+                "name": "IoControlCode",
+                "value": "0x500016"
+              },
+              {
+                "name": "InputBuffer",
+                "value": "0x00000000000000000100000001000000100000000000000040f85f0000000000080000000000000048f85f0000000000"
+              },
+              {
+                "name": "OutputBuffer",
+                "value": "0x"
+              }
+            ]
+          },
+          {
+            "api": "WriteConsoleW",
+            "category": "system",
+            "status": "success",
+            "return_value": 1,
+            "thread_id": 1680,
+            "time": 562,
+            "arguments": [
+              {
+                "name": "ConsoleHandle",
+                "value": "0x68"
+              },
+              {
+                "name": "Buffer",
+                "value": "0x5b2a5d2054657374205061796c6f61642046696e69736865642e20536c656570696e6720666f722035207365636f6e647320746f20616c6c6f77206d6f6e69746f7220746f20666c757368206c6f67732e2e2e0a"
+              }
+            ]
+          },
+          {
+            "api": "NtWaitForSingleObject",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 562,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x258"
+              },
+              {
+                "name": "Milliseconds",
+                "value": "0xffffffff"
+              },
+              {
+                "name": "Status",
+                "value": "0x496e66696e697465"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5578,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x258"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetDllHandle",
+            "category": "system",
+            "status": "failed",
+            "return_value": -1073741515,
+            "thread_id": 1680,
+            "time": 5578,
+            "arguments": [
+              {
+                "name": "FileName",
+                "value": "0x6d73636f7265652e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x0"
+              }
+            ]
+          },
+          {
+            "api": "NtTerminateProcess",
+            "category": "process",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5578,
+            "arguments": [
+              {
+                "name": "ProcessHandle",
+                "value": "0x0"
+              },
+              {
+                "name": "ExitCode",
+                "value": "0x0"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5578,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x2a4"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5578,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x2a8"
+              }
+            ]
+          },
+          {
+            "api": "NtUnmapViewOfSectionEx",
+            "category": "process",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5578,
+            "arguments": [
+              {
+                "name": "ProcessHandle",
+                "value": "0xffffffffffffffff"
+              },
+              {
+                "name": "BaseAddress",
+                "value": "0x680000"
+              },
+              {
+                "name": "RegionSize",
+                "value": "0x1000"
+              },
+              {
+                "name": "Flags",
+                "value": "0x0"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5578,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x2b0"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetDllHandle",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5578,
+            "arguments": [
+              {
+                "name": "FileName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetProcedureAddressForCaller",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5578,
+            "arguments": [
+              {
+                "name": "ModuleName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              },
+              {
+                "name": "FunctionName",
+                "value": "0x52746c446c6c53687574646f776e496e50726f6772657373"
+              },
+              {
+                "name": "Ordinal",
+                "value": "0x0"
+              },
+              {
+                "name": "FunctionAddress",
+                "value": "0x7fff60d286c0"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5578,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x268"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5578,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x274"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5578,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x278"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5578,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x27c"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5578,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x280"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5578,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x284"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5578,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x28c"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x290"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x298"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x29c"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetProcedureAddressForCaller",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "ModuleName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              },
+              {
+                "name": "FunctionName",
+                "value": "0x4e745175657279576e66537461746544617461"
+              },
+              {
+                "name": "Ordinal",
+                "value": "0x0"
+              },
+              {
+                "name": "FunctionAddress",
+                "value": "0x7fff60da1be0"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x244"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x248"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x24c"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x250"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x20c"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x200"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetDllHandle",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "FileName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetProcedureAddressForCaller",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "ModuleName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              },
+              {
+                "name": "FunctionName",
+                "value": "0x52746c446c6c53687574646f776e496e50726f6772657373"
+              },
+              {
+                "name": "Ordinal",
+                "value": "0x0"
+              },
+              {
+                "name": "FunctionAddress",
+                "value": "0x7fff60d286c0"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1fc"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1e0"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1e4"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1dc"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1c4"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1c8"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1cc"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1d0"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1d4"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1d8"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetDllHandle",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "FileName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetProcedureAddressForCaller",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "ModuleName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              },
+              {
+                "name": "FunctionName",
+                "value": "0x52746c446c6c53687574646f776e496e50726f6772657373"
+              },
+              {
+                "name": "Ordinal",
+                "value": "0x0"
+              },
+              {
+                "name": "FunctionAddress",
+                "value": "0x7fff60d286c0"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1c0"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetDllHandle",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "FileName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetProcedureAddressForCaller",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "ModuleName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              },
+              {
+                "name": "FunctionName",
+                "value": "0x52746c446c6c53687574646f776e496e50726f6772657373"
+              },
+              {
+                "name": "Ordinal",
+                "value": "0x0"
+              },
+              {
+                "name": "FunctionAddress",
+                "value": "0x7fff60d286c0"
+              }
+            ]
+          },
+          {
+            "api": "NtProtectVirtualMemory",
+            "category": "process",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "ProcessHandle",
+                "value": "0xffffffffffffffff"
+              },
+              {
+                "name": "BaseAddress",
+                "value": "0x7fff5fc0d000"
+              },
+              {
+                "name": "ModuleName",
+                "value": "0x6f6c6533322e646c6c"
+              },
+              {
+                "name": "NumberOfBytesProtected",
+                "value": "0x1000"
+              },
+              {
+                "name": "MemoryType",
+                "value": "0x0"
+              },
+              {
+                "name": "NewAccessProtection",
+                "value": "0x4"
+              },
+              {
+                "name": "OldAccessProtection",
+                "value": "0x2"
+              },
+              {
+                "name": "StackPivoted",
+                "value": "0x6e6f"
+              }
+            ]
+          },
+          {
+            "api": "NtProtectVirtualMemory",
+            "category": "process",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "ProcessHandle",
+                "value": "0xffffffffffffffff"
+              },
+              {
+                "name": "BaseAddress",
+                "value": "0x7fff5fc0d000"
+              },
+              {
+                "name": "ModuleName",
+                "value": "0x6f6c6533322e646c6c"
+              },
+              {
+                "name": "NumberOfBytesProtected",
+                "value": "0x1000"
+              },
+              {
+                "name": "MemoryType",
+                "value": "0x0"
+              },
+              {
+                "name": "NewAccessProtection",
+                "value": "0x2"
+              },
+              {
+                "name": "OldAccessProtection",
+                "value": "0x4"
+              },
+              {
+                "name": "StackPivoted",
+                "value": "0x6e6f"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1b8"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1bc"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1b4"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetDllHandle",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "FileName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetProcedureAddressForCaller",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "ModuleName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              },
+              {
+                "name": "FunctionName",
+                "value": "0x52746c446c6c53687574646f776e496e50726f6772657373"
+              },
+              {
+                "name": "Ordinal",
+                "value": "0x0"
+              },
+              {
+                "name": "FunctionAddress",
+                "value": "0x7fff60d286c0"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x198"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x19c"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1a0"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1a4"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1a8"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1b0"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x1ac"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x178"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x17c"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x174"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x170"
+              }
+            ]
+          },
+          {
+            "api": "RegCloseKey",
+            "category": "registry",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x168"
+              }
+            ]
+          },
+          {
+            "api": "RegCloseKey",
+            "category": "registry",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x16c"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x164"
+              }
+            ]
+          },
+          {
+            "api": "RegCloseKey",
+            "category": "registry",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x160"
+              }
+            ]
+          },
+          {
+            "api": "RegCloseKey",
+            "category": "registry",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x15c"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetDllHandle",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "FileName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetProcedureAddressForCaller",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "ModuleName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              },
+              {
+                "name": "FunctionName",
+                "value": "0x52746c446c6c53687574646f776e496e50726f6772657373"
+              },
+              {
+                "name": "Ordinal",
+                "value": "0x0"
+              },
+              {
+                "name": "FunctionAddress",
+                "value": "0x7fff60d286c0"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x150"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x138"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x13c"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x140"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x144"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x148"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x14c"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x158"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x154"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x134"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x12c"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x130"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x11c"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x114"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x118"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0xf4"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0xe8"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0xec"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0xf0"
+              }
+            ]
+          },
+          {
+            "api": "NtOpenKey",
+            "category": "registry",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "KeyHandle",
+                "value": "0xf0"
+              },
+              {
+                "name": "DesiredAccess",
+                "value": "0x20019"
+              },
+              {
+                "name": "ObjectAttributesHandle",
+                "value": "0x0"
+              },
+              {
+                "name": "ObjectAttributesName",
+                "value": "0x5c52656769737472795c4d616368696e655c536f6674776172655c4d6963726f736f66745c57696e646f7773204e545c43757272656e7456657273696f6e5c4752455f496e697469616c697a65"
+              },
+              {
+                "name": "ObjectAttributes",
+                "value": "0x484b45595f4c4f43414c5f4d414348494e455c536f6674776172655c4d6963726f736f66745c57696e646f7773204e545c43757272656e7456657273696f6e5c4752455f496e697469616c697a65"
+              }
+            ]
+          },
+          {
+            "api": "NtQueryValueKey",
+            "category": "registry",
+            "status": "failed",
+            "return_value": -1073741772,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "KeyHandle",
+                "value": "0xf0"
+              },
+              {
+                "name": "ValueName",
+                "value": "0x44697361626c654d65746146696c6573"
+              },
+              {
+                "name": "FullName",
+                "value": "0x484b45595f4c4f43414c5f4d414348494e455c534f4654574152455c4d6963726f736f66745c57696e646f7773204e545c43757272656e7456657273696f6e5c4752455f496e697469616c697a655c44697361626c654d65746146696c6573"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0xf0"
+              }
+            ]
+          },
+          {
+            "api": "NtFreeVirtualMemory",
+            "category": "process",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "ProcessHandle",
+                "value": "0xffffffffffffffff"
+              },
+              {
+                "name": "BaseAddress",
+                "value": "0x2480000"
+              },
+              {
+                "name": "RegionSize",
+                "value": "0x10000"
+              },
+              {
+                "name": "FreeType",
+                "value": "0x8000"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetDllHandle",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "FileName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetProcedureAddressForCaller",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "ModuleName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              },
+              {
+                "name": "FunctionName",
+                "value": "0x52746c446c6c53687574646f776e496e50726f6772657373"
+              },
+              {
+                "name": "Ordinal",
+                "value": "0x0"
+              },
+              {
+                "name": "FunctionAddress",
+                "value": "0x7fff60d286c0"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0xd4"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x94"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0xd8"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0xd0"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0xcc"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0xc8"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x218"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0xe4"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetDllHandle",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "FileName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetProcedureAddressForCaller",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "ModuleName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              },
+              {
+                "name": "FunctionName",
+                "value": "0x52746c446c6c53687574646f776e496e50726f6772657373"
+              },
+              {
+                "name": "Ordinal",
+                "value": "0x0"
+              },
+              {
+                "name": "FunctionAddress",
+                "value": "0x7fff60d286c0"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0xa4"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0xa0"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x9c"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x98"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x70"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x8c"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x90"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetProcedureAddressForCaller",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "ModuleName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              },
+              {
+                "name": "FunctionName",
+                "value": "0x52746c556e726567697374657246656174757265436f6e66696775726174696f6e4368616e67654e6f74696669636174696f6e"
+              },
+              {
+                "name": "Ordinal",
+                "value": "0x0"
+              },
+              {
+                "name": "FunctionAddress",
+                "value": "0x7fff60c830f0"
+              }
+            ]
+          },
+          {
+            "api": "LdrGetProcedureAddressForCaller",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "ModuleName",
+                "value": "0x6e74646c6c2e646c6c"
+              },
+              {
+                "name": "ModuleHandle",
+                "value": "0x7fff60c40000"
+              },
+              {
+                "name": "FunctionName",
+                "value": "0x4e745175657279576e66537461746544617461"
+              },
+              {
+                "name": "Ordinal",
+                "value": "0x0"
+              },
+              {
+                "name": "FunctionAddress",
+                "value": "0x7fff60da1be0"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x88"
+              }
+            ]
+          },
+          {
+            "api": "NtClose",
+            "category": "system",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "Handle",
+                "value": "0x74"
+              }
+            ]
+          },
+          {
+            "api": "NtTerminateProcess",
+            "category": "process",
+            "status": "success",
+            "return_value": 0,
+            "thread_id": 1680,
+            "time": 5593,
+            "arguments": [
+              {
+                "name": "ProcessHandle",
+                "value": "0xffffffffffffffff"
+              },
+              {
+                "name": "ExitCode",
+                "value": "0x0"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "processtree": [
+      {
+        "pid": 7016,
+        "name": "malware2.exe",
+        "children": []
+      }
+    ],
+    "summary": {
+      "files": [],
+      "read_files": [],
+      "write_files": [],
+      "delete_files": []
+    },
+    "enhanced": [],
+    "anomaly": [],
+    "encryptedbuffers": []
+  },
+  "dropped": [],
+  "signatures": [],
+  "CAPE": {
+    "payloads": []
+  }
+}
